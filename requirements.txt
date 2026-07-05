@@ -1,0 +1,4 @@
+# wger MCP 服务器依赖
+# 直接依赖；其余（uvicorn/starlette/mcp 等）由 fastmcp 传递引入
+fastmcp==3.4.2
+httpx==0.28.1
