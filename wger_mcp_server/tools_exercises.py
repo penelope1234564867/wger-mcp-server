@@ -77,6 +77,7 @@ def register(mcp: FastMCP) -> None:
                 "muscles": [m.get("name") for m in (ex.get("muscles") or []) if isinstance(m, dict)],
                 "equipment": [e.get("name") for e in (ex.get("equipment") or []) if isinstance(e, dict)],
                 "language": lang_id,
+                "variations": ex.get("variations") if isinstance(ex.get("variations"), (int, float)) else 0,
             })
             if len(matches) >= limit:
                 break
@@ -125,6 +126,7 @@ def register(mcp: FastMCP) -> None:
             "translations": trans_summary,
             "images": [img.get("image") for img in (data.get("images") or []) if isinstance(img, dict)],
             "videos": [v.get("video") for v in (data.get("videos") or []) if isinstance(v, dict)],
+            "variations": data.get("variations") if isinstance(data.get("variations"), (int, float)) else 0,
             "license": (data.get("license") or {}).get("short_name") if isinstance(data.get("license"), dict) else None,
             "license_author": data.get("license_author"),
         }

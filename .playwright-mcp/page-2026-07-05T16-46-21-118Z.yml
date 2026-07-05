@@ -1,0 +1,27 @@
+- main [ref=e2]:
+  - heading "正在确认你是不是机器人！" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - img [ref=e5]
+    - paragraph [ref=e6]:
+      - text: 计算中...
+      - text: 难度： 4, 速度： 0kH/s
+    - progressbar "计算中... 难度： 4, 速度： 0kH/s" [ref=e7]
+    - group [ref=e8]
+  - generic [ref=e10]:
+    - paragraph [ref=e11]:
+      - text: 本网站由
+      - link "Anubis" [ref=e12] [cursor=pointer]:
+        - /url: https://github.com/TecharoHQ/anubis
+      - text: 保护，来自
+      - link "Techaro" [ref=e13] [cursor=pointer]:
+        - /url: https://techaro.lol
+      - text: . 在 🇨🇦 用 ❤️ 制作.
+    - paragraph [ref=e14]:
+      - text: 吉祥物由
+      - link "CELPHASE 设计" [ref=e15] [cursor=pointer]:
+        - /url: https://bsky.app/profile/celphase.bsky.social
+      - text: .
+    - paragraph [ref=e16]:
+      - text: 这个网站正在运行的 Anubis 版本为
+      - code [ref=e17]: v1.26.0-pre1
+      - text: .
