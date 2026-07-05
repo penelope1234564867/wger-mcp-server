@@ -8,4 +8,5 @@ venv/
 install_err.log
 server.log
 .claude/
+.mcp.json
 .workbuddy/
