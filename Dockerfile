@@ -1,5 +1,9 @@
 # Hugging Face Spaces - Docker SDK
 # wger MCP 服务器（SSE 模式），监听 HF 要求的 7860 端口
+
+# 每次 push 时改为 BUND_TIME=$(date +%s) 强制 Docker 缓存失效
+ARG CACHE_BUST
+
 FROM python:3.11-slim
 
 # 设置工作目录
